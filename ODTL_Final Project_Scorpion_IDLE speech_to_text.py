@@ -39,7 +39,7 @@ with sd.RawInputStream(samplerate=sample_rate, blocksize=8000, dtype='int16',
                 if text:
                     print("You said:", text)
                     
-                    # Send command to ESP32 if "light" is detected
+                    # Send command to ESP32 if required commands are detected
                     if "expand" in text.lower():
                         print("Sending command to ESP32...")
                         try:
